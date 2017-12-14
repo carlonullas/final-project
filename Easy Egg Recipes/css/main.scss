@@ -1,0 +1,21 @@
+/* ==========================================================================
+* Delicious Dessert Recipes
+* Author: Randy Pham
+* Version: 1.0.1
+========================================================================== */
+
+// BASE 
+@import 'sass/base/variables';
+@import 'sass/base/mixins';
+@import 'sass/base/base';
+
+// LAYOUT 
+@import 'sass/layout/_header';
+@import 'sass/layout/_footer';
+
+// PAGES
+@import 'sass/pages/_index';
+@import 'sass/pages/_recipes';
+@import 'sass/pages/_submit-recipe';
+@import 'sass/pages/_contact';
+@import 'sass/pages/_recipe-template';

@@ -1,0 +1,82 @@
+/* ==========================================================================
+   HEADER & NAV STYLES
+   ========================================================================== */
+#main-header {
+	padding: 40px 0 0 0;
+	@include bp-mobile-lg {
+		padding-top: 10px;
+	}
+
+	h1 {
+		color: $primary-color;
+		margin: 20px 0 40px 0;
+		text-align: center;
+		text-transform: lowercase;
+		@include bp-mobile-lg {
+			font-size: 1.6em;
+			margin: 20px 0;
+			padding: 0 10px;
+		}
+		@include bp-mobile-sm {
+			font-size: 1.4em;
+		}
+	}
+
+	nav {
+		background-color: $primary-color;
+		padding: 15px 0;
+		@include bp-mobile-lg {
+			padding: 0;
+		}
+
+		#nav-menu {
+			display: none;
+			@include bp-mobile-lg {
+				display: block;
+				color: #FFF;
+				padding: 10px 0;
+				margin: 0;
+				text-align: center;
+				&:hover, &:active {
+					cursor: pointer;
+					background-color: $secondary-color;
+					transition: .3s ease;
+				}
+			}
+		}
+
+		ul {
+			text-align: center;
+			@include bp-mobile-lg {
+				display: none;
+			}
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			@include bp-mobile-lg {
+				display: block;
+				margin: 0;
+				padding: 15px 0;
+			}
+		}
+
+		a {
+			color: $light-color;
+			padding: 15px 12px;
+			&:hover, &:active {
+				background-color: $light-color;
+				color: $primary-color;
+				transition: .3s ease;
+			}
+			@include bp-mobile-lg {
+				padding: 6px;
+				&:hover, &:active {
+					background-color: $primary-color;
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   RECIPES PAGE STYLES
+   ========================================================================== */
+#recipes {
+
+	h2 {
+		@include bp-mobile-lg {
+			text-align: center;
+		}
+	}
+
+	#recipe-index {
+		clear: both;
+		margin-left: 0px;
+
+		.contain-recipe-item {
+			width: 24%;
+			float: left;
+			margin-bottom: 1%;
+			margin-right: 1%;
+			@include bp-tablet-lg {
+				width: 32.33333%;
+				margin-bottom: 1%;
+				margin-right: 1%;
+			}
+			@include bp-tablet-sm {
+				width: 49%;
+				margin-bottom: 1%;
+				margin-right: 1%;
+			}
+			@include bp-mobile-sm {
+				width: 100%;
+				float: none;
+				margin-bottom: 20px;
+				margin-right: 0;
+			}
+		}
+
+		.recipe-item {
+			background-color: $primary-color;
+			
+			.recipe-item-content {
+				height: 100px;
+				padding: 10px 10px 40px 10px;
+				text-align: center;
+
+				.date {
+					color: $light-color;
+					display: block;
+					font-size: .70em;
+					margin: 15px 0;
+					@include bp-mobile-lg {
+						font-size: .80em;
+					}
+				}
+
+				h3 {
+					margin: 15px 0 0 0;
+					@include bp-mobile-sm {
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Submit Recipe - Delicious Dessert Recipes</title>
+        <meta name="description" content="Delicious Dessert Recipes, providing tasty dessert recipes such as cheesecakes, cookies, brownies, pies, and many more. (Note: This is only a web project, not a real website.)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,500" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="body-wrapper">
+            <div class="page-container">
+
+                <!-- Main Page Header & Navigation -->
+                <header id="main-header">
+                    <h1>Easy Egg Recipes</h1>
+                    <nav>
+                        <h3 id="nav-menu">Menu</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="submit-recipe.html">Submit</a></li>
+                                                   </ul>
+                    </nav>
+                </header>
+
+                <!-- Main Page Content -->
+                <main id="submit-recipe">
+                    <div class="content-container">
+                        <h2>Submit Recipes</h2>
+                        <p>Do you have a tasty Eggrecipe? Then submit your delicious recipe below to build our dessert community! Fill out all required sections and upload one large, high quality image of your recipe. After submitting your recipe, we will review your recipe for approval. Once approved, we will email you back about your submission. One last thing, make sure it is delicious!</p>
+                        <form action="#" method="post" id="submit-recipe-form">
+                            <!-- Submitter's Info -->
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" maxlength="75" placeholder="Enter Name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" maxlength="75" placeholder="Enter Email" required>
+                            <hr> 
+                            <!-- Basic Recipe Info-->
+                            <label for="recipe-name">Recipe Name:</label> 
+                            <input type="text" name="recipe-name" id="recipe-name" maxlength="75" placeholder="Enter Name of Recipe" required>
+                            <label for="recipe-description">Recipe Description: </label> 
+                            <textarea name="recipe-description" id="recipe-description" cols="30" rows="10" maxlength="500" placeholder="Enter Brief Description About Recipe (500 Characters Max)" required></textarea>
+                            <hr>
+                            <!-- Recipe Ingredients -->
+                            <label for="ingredients">Ingredients:</label>
+                            <ul id="ingredients-form">
+                                <li><input type="text" name="ingredients" maxlength="50" placeholder="Add Ingredient &amp; Measurements" required></li>
+                                <li><input type="text" name="ingredients" maxlength="50"></li>
+                                <li><input type="text" name="ingredients" maxlength="50"></li>
+                                <li><input type="text" name="ingredients" maxlength="50"></li>
+                                <li><input type="text" name="ingredients" maxlength="50"></li>
+                                <li><input type="text" name="ingredients" maxlength="50"></li>
+                            </ul>
+                            <button type="button" id="ingredients-btn">Add Ingredient</button>
+                            <hr>
+                            <!-- Recipe Directions -->
+                            <label for="directions">Directions:</label>
+                            <ul id="directions-form">
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 1" required></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 2"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 3"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 4"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 5"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 6"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 7"></li>
+                                <li><input type="text" name="directions" maxlength="50" placeholder="Step 8"></li>
+                            </ul>
+                            <button type="button" id="directions-btn">Add Step</button>
+                            <hr>
+                            <!-- Optional Nutrition Info -->
+                            <label for="serv-size">Nutrition Info (Optional):</label>
+                            Serving Size <input type="text" name="serv-size" maxlength="20" placeholder="?">
+                            Serving Per Recipe <input type="text" name="serv-per" maxlength="3" placeholder="?">
+                            Calories <input type="text" name="calories" maxlength="5" placeholder="?">
+                            Fat <input type="text" name="fat" maxlength="3" placeholder="? g">
+                            Carbohydrates <input type="text" name="carbs" maxlength="3" placeholder="? g">
+                            Protein <input type="text" name="protein" maxlength="3" placeholder="? g">
+                            <hr>
+                            <!-- Upload Recipe Image -->
+                            <label for="upload-img">Upload Recipe Image</label>
+                            <input type="file" name="upload-img" id="upload-img" required>
+
+                            <input type="submit" value="Submit Recipe" id="submit-recipe-btn">
+                        </form>
+                    </div>
+                </main>
+
+                <!-- Main Page Footer -->
+                <footer id="main-footer">
+                    <div class="content-container clearfix">
+                        <div class="col" id="about">
+                                          </div>
+
+                                            <div class="col" id="footer-social">
+                                      </div>
+                        <p id="copyright"><small>&copy; 2017 - Easy Egg Recipes</small></p>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <!-- Custom jQuery -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

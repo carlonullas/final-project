@@ -1,0 +1,48 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES
+   ========================================================================== */
+#contact-page {
+
+	h2 {
+		margin-bottom: 5px;
+		@include bp-mobile-lg {
+			text-align: center;
+		}
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	#contact-form {
+		
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input:not(#submit-btn) {
+			display: block;
+			margin-bottom: 20px;
+			padding: 5px 10px;
+			width: 100%;
+			font-weight: 300;
+			box-sizing: border-box;
+			border-radius: 0;
+		}
+
+		textarea {
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			padding: 5px 10px;
+			font-weight: 300;
+			resize: none;
+			border-radius: 0;
+		}
+
+		#submit-btn {
+			@include btn($primary-color, $primary-color, $light-color, .9em, $secondary-color, $secondary-color);
+		}			
+	}
+}

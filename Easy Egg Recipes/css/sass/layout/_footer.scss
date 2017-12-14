@@ -1,0 +1,86 @@
+/* ==========================================================================
+   FOOTER STYLES
+   ========================================================================== */
+#main-footer {
+	background-color: $primary-color;
+	padding: 30px 0 5px 0;
+
+	.container {
+		padding-bottom: 0;
+	}
+
+	.col {
+		width: 33.33333%;
+		float: left;
+		@include bp-mobile-lg {
+			width: 100%;
+			float: none;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+	}
+
+	h3 {
+		color: $light-color;
+		font-size: .9em;
+		margin: 0;
+	}
+
+	#about {
+		p {
+			color: $light-color;
+			font-size: .9em;
+			margin: 0;
+			padding-right: 20px;
+			@include bp-mobile-lg {
+				padding: 0;
+			}
+		}
+	}
+
+	#footer-nav {
+		li {
+			font-size: .9em;
+			margin-bottom: 3px;
+			@include bp-mobile-lg {
+				margin: 5px 0;
+			}
+		}
+
+		a {
+			color: $light-color;
+			font-weight: 300;
+			&:hover, &:active {
+				color: $secondary-color;
+				transition: .3s ease;
+			}
+		}
+	}
+
+	#footer-social {
+		li {
+			display: inline-block;
+			margin-right: 5px;
+		}
+
+		i {
+			color: $light-color;
+			font-size: 2.5em;
+			&:hover, &:active {
+				color: $secondary-color;
+				transition: .3s ease;
+			}
+			@include bp-mobile-lg {
+				font-size: 2em;
+			}
+		}
+	}
+
+	#copyright {
+		color: $light-color;
+		clear: both;
+		margin: 0;
+		max-width: 100%;
+		text-align: center;
+	}
+}
